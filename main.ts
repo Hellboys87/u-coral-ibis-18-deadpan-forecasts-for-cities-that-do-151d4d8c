@@ -12,11 +12,11 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 // The forecast, as a straight-faced meteorologist would read it.
-// 150 characters: an invented city, three concrete details (9 centimetres
-// of sideways rain; a high of 4 degrees; a single cloud), and a deadpan
-// twist at the end — the cloud stays until further notice.
+// 160 characters: an invented city, four concrete details (9 cm of
+// sideways rain; winds of 70 km/h; a high of 4 degrees; a single cloud),
+// and a deadpan twist at the end — the cloud stays until further notice.
 const FORECAST =
-  'In Mildew Falls, 9 centimetres of sideways rain and a high of 4 degrees, ' +
+  'In Mildew Falls, 9 cm of sideways rain, winds of 70 km/h, and a high of 4 degrees, ' +
   'clearing overnight to a single cloud, which will remain until further notice.';
 
 // The gate allows 1 to 160 characters, so refuse to ship a line that
